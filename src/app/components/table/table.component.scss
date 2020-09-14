@@ -1,0 +1,41 @@
+.asset-table {
+  width: 100%;
+  border-collapse: collapse;
+  &-row {
+    text-align: center;
+
+    &:hover:not(.asset-table-header) {
+      background-color: #e4f1f6;
+    }
+
+    &.equities {
+      background-color: #609ce18e;
+    }
+    &.credit {
+      background-color: #9bd7708e;
+    }
+
+    th,
+    td {
+      padding: 15px;
+      border-bottom: 1px solid #e1ecf9;
+
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &.sort {
+          cursor: pointer;
+        }
+        .material-icons {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+
+  &-header {
+    background-color: #133863;
+    color: #e1ecf9;
+  }
+}

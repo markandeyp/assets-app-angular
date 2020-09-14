@@ -1,27 +1,47 @@
 # AssetsApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.1.
+**Author** _Markandey Pathak_
 
-## Development server
+A simple single page application to display assets using data table.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+*Sample data set is given below*
 
-## Code scaffolding
+```
+[
+  {
+    "ticker": "ALPHA",
+    "price": 3150.67,
+    "assetClass": "Credit"
+  },
+  {
+    "ticker": "BETA",
+    "price": 3791.37,
+    "assetClass": "Equities"
+  },
+  {
+    "ticker": "GAMMA",
+    "price": 2299.1,
+    "assetClass": "Equities"
+  }
+]
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The data table is by default **grouped by _Asset Class_** and **sorted alphabetically by _Asset Name (Ticker)_**. Clicking headers in data table will sort the data based on the column clicked. The arrow next to column header represents the sort order.
 
-## Build
+## Clone the repository
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+`git clone https://github.com/markandeyp/assets-app-angular.git`
 
-## Running unit tests
+## Running the application
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Open _terminal_ and navigate to the _cloned repository_ and run below command
 
-## Running end-to-end tests
+`npm start`
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Open [http://localhost:4200] in browser.
 
-## Further help
+## Running the test cases
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Open _terminal_ and navigate to the _cloned repository_ and run below command
+
+`npm test`
